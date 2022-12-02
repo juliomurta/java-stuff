@@ -1,3 +1,3 @@
 public interface IEqualsCommand {
-    public boolean isEqualsTo(final BankTransaction bankTransaction);
+    boolean isEqualsTo(final BankTransaction bankTransaction);
 }

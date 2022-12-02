@@ -9,9 +9,11 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/BankAnalyzer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BankStatementAnalyzer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/BankStatementCSVParser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/BankStatementProcessor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/BankTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IBankStatementParser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/IEqualsCommand.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/MonthEqualCommand.java" afterDir="false" />
@@ -25,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
