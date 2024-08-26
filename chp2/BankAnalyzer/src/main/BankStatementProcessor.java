@@ -12,8 +12,10 @@ public class BankStatementProcessor {
 
     public double calculateTotalAmount() {
         double total = 0;
-        for(final BankTransaction bankTransaction: bankTransactions) {
-            total += bankTransaction.getAmount();
+        if (bankTransactions != null && !bankTransactions.isEmpty()) {
+            for (final BankTransaction bankTransaction : bankTransactions) {
+                total += bankTransaction.getAmount();
+            }
         }
         return total;
     }
