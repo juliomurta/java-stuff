@@ -1,3 +1,5 @@
+package main;
+
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -13,24 +15,34 @@ public class BankTransaction {
     }
 
     public LocalDate getDate() {
-        return this.date;
+        return date;
     }
 
     public double getAmount() {
-        return this.amount;
+        return amount;
     }
 
     public String getDescription() {
-        return this.description;
+        return description;
     }
 
     @Override
     public String toString() {
-        return "BankTransaction{" +
-                "date=" + this.date +
-                ", amount=" + this.amount +
-                ", description='" + this.description + '\'' +
+        return "main.BankTransaction{" +
+                "date=" + date +
+                ", amount=" + amount +
+                ", description=" + description + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if(obj == null || getClass() != obj.getClass()) return false;
+        BankTransaction that = (BankTransaction) obj;
+        return Double.compare(that.amount, amount) == 0 &&
+                date.equals(that.date) &&
+                description.equals(that.description);
     }
 
     @Override
