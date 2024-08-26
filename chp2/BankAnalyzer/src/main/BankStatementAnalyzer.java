@@ -22,5 +22,7 @@ public class BankStatementAnalyzer {
         System.out.println("The total for transactions in january is " + bankStatementProcessor.calculateTotalInMonth(Month.JANUARY));
         System.out.println("The total for transactions in february is " + bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));
         System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));
+        System.out.println("Min: " + bankStatementProcessor.getMin());
+        System.out.println("Max: " + bankStatementProcessor.getMax());
     }
 }

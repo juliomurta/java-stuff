@@ -1,5 +1,6 @@
 package main;
 
+import java.time.LocalDate;
 import java.time.Month;
 import java.util.List;
 
@@ -38,5 +39,25 @@ public class BankStatementProcessor {
             }
         }
         return  total;
+    }
+
+    public BankTransaction getMin() {
+        BankTransaction minTransaction = null;
+        for(final BankTransaction bankTransaction: bankTransactions) {
+            if (minTransaction == null || bankTransaction.getAmount() < minTransaction.getAmount()) {
+                minTransaction = bankTransaction;
+            }
+        }
+        return minTransaction;
+    }
+
+    public BankTransaction getMax() {
+        BankTransaction maxTransaction = null;
+        for(final BankTransaction bankTransaction: bankTransactions) {
+            if (maxTransaction == null || bankTransaction.getAmount() > maxTransaction.getAmount()) {
+                maxTransaction = bankTransaction;
+            }
+        }
+        return maxTransaction;
     }
 }

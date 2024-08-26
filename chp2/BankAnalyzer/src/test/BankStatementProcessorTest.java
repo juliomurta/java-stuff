@@ -56,6 +56,20 @@ public class BankStatementProcessorTest {
         Assert.assertEquals(900, bankStatementProcessor.calculateTotalInMonth(Month.JUNE), tolerance);
     }
 
+    @Test
+    public void getLowestTransaction() {
+        List<BankTransaction> bankTransactions = this.setupFiveTransactions();
+        BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
+        Assert.assertEquals(100, bankStatementProcessor.getMin().getAmount(), tolerance);
+    }
+
+    @Test
+    public void getHigherTransaction() {
+        List<BankTransaction> bankTransactions = this.setupFiveTransactions();
+        BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
+        Assert.assertEquals(500, bankStatementProcessor.getMax().getAmount(), tolerance);
+    }
+
     private List<BankTransaction> setupFiveTransactions() {
         BankTransaction transaction1 = new BankTransaction(LocalDate.of(2024, Month.APRIL, 11), 100, "test 1");
         BankTransaction transaction2 = new BankTransaction(LocalDate.of(2024, Month.APRIL, 29), 200, "test 2");
