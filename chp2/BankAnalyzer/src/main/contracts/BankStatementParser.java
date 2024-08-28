@@ -1,4 +1,6 @@
-package main;
+package main.contracts;
+
+import main.BankTransaction;
 
 import java.util.List;
 

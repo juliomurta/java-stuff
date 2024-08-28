@@ -1,4 +1,7 @@
-package main;
+package main.parsers;
+
+import main.contracts.BankStatementParser;
+import main.BankTransaction;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

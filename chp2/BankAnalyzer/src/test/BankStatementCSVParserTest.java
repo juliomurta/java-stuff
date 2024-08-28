@@ -1,7 +1,7 @@
 package test;
 
-import main.BankStatementCSVParser;
-import main.BankStatementParser;
+import main.parsers.BankStatementCSVParser;
+import main.contracts.BankStatementParser;
 import main.BankTransaction;
 import org.junit.Assert;
 import org.junit.Test;
