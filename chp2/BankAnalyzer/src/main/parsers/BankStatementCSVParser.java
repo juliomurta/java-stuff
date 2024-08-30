@@ -3,6 +3,7 @@ package main.parsers;
 import main.contracts.BankStatementParser;
 import main.BankTransaction;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -11,7 +12,7 @@ import java.util.List;
 public class BankStatementCSVParser implements BankStatementParser {
     private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
-    public BankTransaction parseFrom(final String line) {
+    public BankTransaction parseFrom(final String line) throws IOException {
         final String[] columns = line.split(",");
 
         final LocalDate date = LocalDate.parse(columns[0], DATE_PATTERN);
@@ -20,7 +21,7 @@ public class BankStatementCSVParser implements BankStatementParser {
         return new BankTransaction(date, amount, description);
     }
 
-    public List<BankTransaction> parseLinesFrom(final List<String> lines) {
+    public List<BankTransaction> parseLinesFrom(final List<String> lines) throws IOException {
         final List<BankTransaction> bankTransactions = new ArrayList<>();
         for (final String line: lines) {
             bankTransactions.add(parseFrom(line));

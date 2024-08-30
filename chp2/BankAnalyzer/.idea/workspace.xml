@@ -5,20 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/contracts/BankStatementReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementXmlParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/readers/BankStatementCSVReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transactions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/transactions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/readers/BankStatementJsonReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/readers/BankStatementXmlReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/contracts/BankStatementParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BankAnalyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/BankAnalyzer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/contracts/BankStatementParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/contracts/BankStatementParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/BankStatementCSVParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementCSVParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +51,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.BankTransactionAnalyzerSimple.executor": "Run",
+    "Application.BankTransactionAnalyzerSimple.executor": "Debug",
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.BankStatementCSVParserTest.executor": "Run",
+    "JUnit.BankStatementCSVParserTest.shouldParseOneCorrectLine.executor": "Run",
     "JUnit.BankStatementProcessorTest.calculateOneTransaction.executor": "Run",
     "JUnit.BankStatementProcessorTest.calculateTotalInMonth.executor": "Run",
     "JUnit.BankStatementProcessorTest.calculateTotalInNonExistentMonth.executor": "Run",
@@ -61,16 +64,19 @@
     "JUnit.BankStatementProcessorTest.executor": "Run",
     "JUnit.BankStatementProcessorTest.getHigherTransaction.executor": "Run",
     "JUnit.BankStatementProcessorTest.getLowestTransaction.executor": "Run",
+    "Maven.BankAnalyzer [clean].executor": "Run",
+    "Maven.BankAnalyzer [install].executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Julio Murta/source/repos/java-stuff/chp2/BankAnalyzer/src/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BankTransactionAnalyzerSimple">
+  <component name="RunManager" selected="JUnit.BankStatementJsonParserTest.shouldParseOneCorrectLine">
     <configuration name="BankTransactionAnalyzerSimple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.BankTransactionAnalyzerSimple" />
       <module name="BankAnalyzer" />
@@ -84,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankStatementCSVParserTest.shouldParseOneCorrectLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -93,13 +99,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BankStatementProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="test.BankStatementCSVParserTest" />
+      <option name="METHOD_NAME" value="shouldParseOneCorrectLine" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementProcessorTest.calculateTotalInMonth" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankStatementJsonParserTest.shouldParseOneCorrectLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +115,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BankStatementProcessorTest" />
-      <option name="METHOD_NAME" value="calculateTotalInMonth" />
+      <option name="MAIN_CLASS_NAME" value="test.BankStatementJsonParserTest" />
+      <option name="METHOD_NAME" value="shouldParseOneCorrectLine" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BankStatementJsonParserTest.shouldParseOneCorrectLine" />
         <item itemvalue="Application.BankTransactionAnalyzerSimple" />
+        <item itemvalue="JUnit.BankStatementCSVParserTest.shouldParseOneCorrectLine" />
         <item itemvalue="JUnit.BankStatementProcessorTest.getHigherTransaction" />
         <item itemvalue="JUnit.BankStatementProcessorTest.getLowestTransaction" />
-        <item itemvalue="JUnit.BankStatementProcessorTest" />
-        <item itemvalue="JUnit.BankStatementProcessorTest.calculateTotalInMonth" />
       </list>
     </recent_temporary>
   </component>

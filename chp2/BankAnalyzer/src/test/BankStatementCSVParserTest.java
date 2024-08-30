@@ -1,11 +1,13 @@
 package test;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import main.parsers.BankStatementCSVParser;
 import main.contracts.BankStatementParser;
 import main.BankTransaction;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -13,7 +15,7 @@ public class BankStatementCSVParserTest {
     private final BankStatementParser statementParser = new BankStatementCSVParser();
 
     @Test
-    public void shouldParseOneCorrectLine() {
+    public void shouldParseOneCorrectLine() throws IOException {
         final String line = "30-01-2017,-50,Tesco";
         final BankTransaction result = statementParser.parseFrom(line);
 
