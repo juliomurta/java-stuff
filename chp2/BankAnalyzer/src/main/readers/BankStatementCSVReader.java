@@ -9,7 +9,7 @@ import java.util.List;
 
 public class BankStatementCSVReader implements BankStatementReader {
     @Override
-    public List<String> readAllLines(Path path) throws IOException {
+    public List<String> readAllLines(final Path path) throws Exception {
         return Files.readAllLines(path);
     }
 }

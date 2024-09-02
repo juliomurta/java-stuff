@@ -15,7 +15,7 @@ public class BankStatementXmlParserTest {
     private final BankStatementParser statementParser = new BankStatementXmlParser();
 
     @Test
-    public void shouldParseOneCorrectLine() throws IOException {
+    public void shouldParseOneCorrectLine() throws Exception {
         final String line = "<transaction>\n" +
                 "        <date>30-01-2017</date>\n" +
                 "        <amount>-100</amount>\n" +

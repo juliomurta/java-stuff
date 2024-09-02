@@ -10,7 +10,7 @@ import java.time.Month;
 import java.util.List;
 
 public class BankStatementAnalyzer {
-    public void analyze(final String fileName, final BankStatementReader bankStatementReader, final BankStatementParser bankStatementParser) throws IOException {
+    public void analyze(final String fileName, final BankStatementReader bankStatementReader, final BankStatementParser bankStatementParser) throws Exception {
         final Path path = Paths.get(fileName);
         final List<String> lines = bankStatementReader.readAllLines(path);
         final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);

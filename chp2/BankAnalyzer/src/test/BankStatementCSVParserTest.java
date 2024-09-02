@@ -15,7 +15,7 @@ public class BankStatementCSVParserTest {
     private final BankStatementParser statementParser = new BankStatementCSVParser();
 
     @Test
-    public void shouldParseOneCorrectLine() throws IOException {
+    public void shouldParseOneCorrectLine() throws Exception {
         final String line = "30-01-2017,-50,Tesco";
         final BankTransaction result = statementParser.parseFrom(line);
 

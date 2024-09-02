@@ -14,7 +14,7 @@ public class BankStatementJsonParserTest {
     private final BankStatementParser statementParser = new BankStatementJsonParser();
 
     @Test
-    public void shouldParseOneCorrectLine() throws IOException {
+    public void shouldParseOneCorrectLine() throws Exception {
         final String line = "{\n" +
                 "    \"date\": \"30-01-2017\",\n" +
                 "    \"amount\": -100,\n" +
