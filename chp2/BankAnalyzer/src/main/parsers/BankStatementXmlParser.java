@@ -1,6 +1,5 @@
 package main.parsers;
 
-import main.contracts.BankStatementParser;
 import main.BankTransaction;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -11,10 +10,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.StringReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
 
-public class BankStatementXmlParser implements BankStatementParser {
+public class BankStatementXmlParser extends BankStatementParserBase {
 
     private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
@@ -39,15 +36,5 @@ public class BankStatementXmlParser implements BankStatementParser {
                                           .getTextContent();
 
         return new BankTransaction(localDate, amount, description);
-    }
-
-    @Override
-    public List<BankTransaction> parseLinesFrom(List<String> lines) throws Exception {
-        final List<BankTransaction> bankTransactions = new ArrayList<>();
-        for(final String line: lines) {
-            final BankTransaction transaction = this.parseFrom(line);
-            bankTransactions.add(transaction);
-        }
-        return bankTransactions;
     }
 }

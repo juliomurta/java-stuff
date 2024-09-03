@@ -6,7 +6,6 @@ import main.parsers.BankStatementJsonParser;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 

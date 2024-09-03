@@ -5,30 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/BankStatementConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementParserBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/contracts/BankStatementParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/contracts/BankStatementParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/contracts/BankStatementReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/contracts/BankStatementReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementXmlParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementXmlParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/readers/BankStatementCSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/readers/BankStatementCSVReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/readers/BankStatementJsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/readers/BankStatementJsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/readers/BankStatementXmlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/readers/BankStatementXmlReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/BankStatementCSVParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementCSVParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/BankTransactionAnalyzerSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankTransactionAnalyzerSimple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/contracts/BankStatementParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/contracts/BankStatementParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/contracts/BankStatementReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/contracts/BankStatementReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementCSVParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementCSVParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementJsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementJsonParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementXmlParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementXmlParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/readers/BankStatementCSVReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/readers/BankStatementCSVReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/readers/BankStatementJsonReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/readers/BankStatementJsonReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/readers/BankStatementXmlReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/readers/BankStatementXmlReader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/test/BankStatementCSVParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/BankStatementCSVParserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/test/BankStatementJsonParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/BankStatementJsonParserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/test/BankStatementXmlParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/BankStatementXmlParserTest.class" afterDir="false" />
@@ -62,11 +56,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.BankTransactionAnalyzerSimple.executor": "Debug",
+    "Application.BankTransactionAnalyzerSimple.executor": "Run",
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.BankStatementCSVParserTest.executor": "Run",
     "JUnit.BankStatementCSVParserTest.shouldParseOneCorrectLine.executor": "Run",
+    "JUnit.BankStatementJsonParserTest.executor": "Run",
     "JUnit.BankStatementJsonParserTest.shouldParseOneCorrectLine.executor": "Debug",
     "JUnit.BankStatementProcessorTest.calculateOneTransaction.executor": "Run",
     "JUnit.BankStatementProcessorTest.calculateTotalInMonth.executor": "Run",
@@ -76,6 +71,8 @@
     "JUnit.BankStatementProcessorTest.executor": "Run",
     "JUnit.BankStatementProcessorTest.getHigherTransaction.executor": "Run",
     "JUnit.BankStatementProcessorTest.getLowestTransaction.executor": "Run",
+    "JUnit.BankStatementXmlParserTest.executor": "Run",
+    "JUnit.BankStatementXmlParserTest.shouldParseOneCorrectLine.executor": "Run",
     "Maven.BankAnalyzer [clean].executor": "Run",
     "Maven.BankAnalyzer [install].executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -88,7 +85,7 @@
     "onboarding.tips.debug.path": "C:/Users/Julio Murta/source/repos/java-stuff/chp2/BankAnalyzer/src/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BankStatementXmlParserTest.shouldParseOneCorrectLine">
+  <component name="RunManager" selected="Application.BankTransactionAnalyzerSimple">
     <configuration name="BankTransactionAnalyzerSimple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.BankTransactionAnalyzerSimple" />
       <module name="BankAnalyzer" />
@@ -102,7 +99,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementCSVParserTest.shouldParseOneCorrectLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankStatementCSVParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -112,13 +109,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.BankStatementCSVParserTest" />
-      <option name="METHOD_NAME" value="shouldParseOneCorrectLine" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementJsonParserTest.shouldParseOneCorrectLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankStatementJsonParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +124,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.BankStatementJsonParserTest" />
-      <option name="METHOD_NAME" value="shouldParseOneCorrectLine" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementProcessorTest.getHigherTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankStatementProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -144,13 +139,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.BankStatementProcessorTest" />
-      <option name="METHOD_NAME" value="getHigherTransaction" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementXmlParserTest.shouldParseOneCorrectLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BankStatementXmlParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="BankAnalyzer" />
       <extension name="coverage">
         <pattern>
@@ -160,19 +154,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.BankStatementXmlParserTest" />
-      <option name="METHOD_NAME" value="shouldParseOneCorrectLine" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankStatementXmlParserTest.shouldParseOneCorrectLine" />
         <item itemvalue="Application.BankTransactionAnalyzerSimple" />
-        <item itemvalue="JUnit.BankStatementJsonParserTest.shouldParseOneCorrectLine" />
-        <item itemvalue="JUnit.BankStatementCSVParserTest.shouldParseOneCorrectLine" />
-        <item itemvalue="JUnit.BankStatementProcessorTest.getHigherTransaction" />
+        <item itemvalue="JUnit.BankStatementXmlParserTest" />
+        <item itemvalue="JUnit.BankStatementProcessorTest" />
+        <item itemvalue="JUnit.BankStatementJsonParserTest" />
+        <item itemvalue="JUnit.BankStatementCSVParserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +185,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/BankStatementAnalyzer.java</url>
-          <line>13</line>
+          <line>22</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -1,15 +1,11 @@
 package main.parsers;
 
-import main.contracts.BankStatementParser;
 import main.BankTransaction;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
 
-public class BankStatementCSVParser implements BankStatementParser {
+public class BankStatementCSVParser extends BankStatementParserBase {
     private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
     public BankTransaction parseFrom(final String line) throws Exception {
@@ -19,13 +15,5 @@ public class BankStatementCSVParser implements BankStatementParser {
         final double amount = Double.parseDouble(columns[1]);
         final String description = columns[2];
         return new BankTransaction(date, amount, description);
-    }
-
-    public List<BankTransaction> parseLinesFrom(final List<String> lines) throws Exception {
-        final List<BankTransaction> bankTransactions = new ArrayList<>();
-        for (final String line: lines) {
-            bankTransactions.add(parseFrom(line));
-        }
-        return bankTransactions;
     }
 }

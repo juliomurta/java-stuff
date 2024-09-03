@@ -1,13 +1,11 @@
 package test;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import main.BankTransaction;
 import main.contracts.BankStatementParser;
 import main.parsers.BankStatementXmlParser;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 
