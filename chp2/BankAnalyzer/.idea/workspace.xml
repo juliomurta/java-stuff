@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/BankStatementConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementParserBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/MainForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ui/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementCSVParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementJsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/parsers/BankStatementXmlParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/parsers/BankStatementXmlParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BankStatementCSVParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementCSVParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementJsonParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/BankStatementXmlParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/BankAnalyzer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankAnalyzer-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/BankTransactionAnalyzerSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankTransactionAnalyzerSimple.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementCSVParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementCSVParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementJsonParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementJsonParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementXmlParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/parsers/BankStatementXmlParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/BankStatementCSVParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/BankStatementCSVParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/BankStatementJsonParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/BankStatementJsonParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/BankStatementXmlParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/BankStatementXmlParserTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,9 +67,11 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "281",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Julio Murta/source/repos/java-stuff/chp2/BankAnalyzer/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/Julio Murta/source/repos/java-stuff/chp2/BankAnalyzer/src/Main.java",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RunManager" selected="Application.BankTransactionAnalyzerSimple">

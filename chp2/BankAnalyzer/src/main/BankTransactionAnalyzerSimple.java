@@ -6,6 +6,7 @@ import main.parsers.BankStatementXmlParser;
 import main.readers.BankStatementCSVReader;
 import main.readers.BankStatementJsonReader;
 import main.readers.BankStatementXmlReader;
+import main.ui.MainForm;
 
 
 public class BankTransactionAnalyzerSimple {
@@ -14,11 +15,13 @@ public class BankTransactionAnalyzerSimple {
     //private static final String RESOURCES = "target/classes/transactions.xml";
 
     public static void main(String[] args) throws Exception {
-        final BankStatementConfig statementConfig = new BankStatementConfig();
+        /*final BankStatementConfig statementConfig = new BankStatementConfig();
         statementConfig.setReader(new BankStatementCSVReader());
         statementConfig.setParser(new BankStatementCSVParser());
 
         final BankStatementAnalyzer bankStatementAnalyzer = new BankStatementAnalyzer(statementConfig);
-        bankStatementAnalyzer.analyze(RESOURCES);
+        bankStatementAnalyzer.analyze(RESOURCES);*/
+
+        MainForm mainForm = new MainForm();
     }
 }
