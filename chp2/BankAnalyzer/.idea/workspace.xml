@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/ui/MainForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/ui/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/BankAnalyzer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/BankAnalyzer-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/BankTransactionAnalyzerSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankTransactionAnalyzerSimple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/MainForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ui/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/ui/MainForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/ui/MainForm$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/ui/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/ui/MainForm.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,39 +41,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BankTransactionAnalyzerSimple.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.BankStatementCSVParserTest.executor": "Run",
-    "JUnit.BankStatementCSVParserTest.shouldParseOneCorrectLine.executor": "Run",
-    "JUnit.BankStatementJsonParserTest.executor": "Run",
-    "JUnit.BankStatementJsonParserTest.shouldParseOneCorrectLine.executor": "Debug",
-    "JUnit.BankStatementProcessorTest.calculateOneTransaction.executor": "Run",
-    "JUnit.BankStatementProcessorTest.calculateTotalInMonth.executor": "Run",
-    "JUnit.BankStatementProcessorTest.calculateTotalInNonExistentMonth.executor": "Run",
-    "JUnit.BankStatementProcessorTest.calculateTotalWithFiveTransactions.executor": "Run",
-    "JUnit.BankStatementProcessorTest.calculateWithoutTransaction.executor": "Run",
-    "JUnit.BankStatementProcessorTest.executor": "Run",
-    "JUnit.BankStatementProcessorTest.getHigherTransaction.executor": "Run",
-    "JUnit.BankStatementProcessorTest.getLowestTransaction.executor": "Run",
-    "JUnit.BankStatementXmlParserTest.executor": "Run",
-    "JUnit.BankStatementXmlParserTest.shouldParseOneCorrectLine.executor": "Run",
-    "Maven.BankAnalyzer [clean].executor": "Run",
-    "Maven.BankAnalyzer [install].executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH": "281",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/Julio Murta/source/repos/java-stuff/chp2/BankAnalyzer/src/Main.java",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BankTransactionAnalyzerSimple.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.BankStatementCSVParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementCSVParserTest.shouldParseOneCorrectLine.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementJsonParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementJsonParserTest.shouldParseOneCorrectLine.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.BankStatementProcessorTest.calculateOneTransaction.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.calculateTotalInMonth.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.calculateTotalInNonExistentMonth.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.calculateTotalWithFiveTransactions.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.calculateWithoutTransaction.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.getHigherTransaction.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementProcessorTest.getLowestTransaction.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementXmlParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankStatementXmlParserTest.shouldParseOneCorrectLine.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BankAnalyzer [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.BankAnalyzer [install].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH&quot;: &quot;281&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Julio Murta/source/repos/java-stuff/chp2/BankAnalyzer/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.BankTransactionAnalyzerSimple">
     <configuration name="BankTransactionAnalyzerSimple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.BankTransactionAnalyzerSimple" />
@@ -168,16 +168,5 @@
       <updated>1724673603385</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/BankStatementAnalyzer.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -16,7 +16,7 @@ public class BankStatementAnalyzer {
         statementConfig = config;
     }
 
-    public void analyze(final String fileName) throws Exception {
+    public String analyze(final String fileName) throws Exception {
         final BankStatementReader bankStatementReader = statementConfig.getReader();
         final BankStatementParser bankStatementParser = statementConfig.getParser();
 
@@ -25,15 +25,32 @@ public class BankStatementAnalyzer {
         final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
-        collectSummary(bankStatementProcessor);
+        return collectSummary(bankStatementProcessor);
     }
 
-    private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
-        System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());
-        System.out.println("The total for transactions in january is " + bankStatementProcessor.calculateTotalInMonth(Month.JANUARY));
-        System.out.println("The total for transactions in february is " + bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));
-        System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));
-        System.out.println("Min: " + bankStatementProcessor.getMin());
-        System.out.println("Max: " + bankStatementProcessor.getMax());
+    private String collectSummary(final BankStatementProcessor bankStatementProcessor) {
+        StringBuilder stringBuilder = new StringBuilder()
+                .append("Source type is ")
+                .append(statementConfig.getSourceType())
+                .append("\n")
+                .append("The total for all transactions is ")
+                .append(bankStatementProcessor.calculateTotalAmount())
+                .append("\n")
+                .append("The total for transactions in january is ")
+                .append(bankStatementProcessor.calculateTotalInMonth(Month.JANUARY))
+                .append("\n")
+                .append("The total for transactions in february is ")
+                .append(bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY))
+                .append("\n")
+                .append("The total salary received is ")
+                .append(bankStatementProcessor.calculateTotalForCategory("Salary"))
+                .append("\n")
+                .append("Min: ")
+                .append(bankStatementProcessor.getMin())
+                .append("\n")
+                .append("Max: ")
+                .append(bankStatementProcessor.getMax());
+
+        return stringBuilder.toString();
     }
 }

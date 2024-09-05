@@ -7,9 +7,9 @@
     </constraints>
     <properties>
       <alignmentX value="0.5"/>
-      <minimumSize width="400" height="500"/>
+      <minimumSize width="500" height="500"/>
       <opaque value="true"/>
-      <preferredSize width="400" height="300"/>
+      <preferredSize width="500" height="300"/>
       <requestFocusEnabled value="false"/>
     </properties>
     <border type="none"/>

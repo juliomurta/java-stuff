@@ -1,8 +1,10 @@
 package main.ui;
 
+import main.BankStatementAnalyzer;
 import main.BankStatementConfig;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -29,7 +31,6 @@ public class MainForm extends JFrame {
 
     public MainForm() {
 
-
         setTitle("Bank Analyzer");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setContentPane(contentPane);
@@ -38,10 +39,13 @@ public class MainForm extends JFrame {
         textField1.setEnabled(false);
         textArea1.setEnabled(false);
 
+        textField1.setDisabledTextColor(Color.BLACK);
+        textArea1.setDisabledTextColor(Color.BLACK);
+
         fileChooser = new JFileChooser("C:\\Users\\Julio Murta\\source\\repos\\java-stuff\\chp2\\BankAnalyzer\\target\\classes");
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
-        List<String> allowedExtensions = new ArrayList<>();
+        final List<String> allowedExtensions = new ArrayList<>();
         allowedExtensions.add("csv");
         allowedExtensions.add("xml");
         allowedExtensions.add("json");
@@ -49,15 +53,14 @@ public class MainForm extends JFrame {
         selectFileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                boolean result = fileChooser.showSaveDialog(null) == SAVE;
+                final boolean result = fileChooser.showSaveDialog(null) == SAVE;
                 if (result){
-
-                    File file = fileChooser.getSelectedFile();
-
-                    String path = file.getPath();
-                    String extension = FilenameUtils.getExtension(path);
+                    final File file = fileChooser.getSelectedFile();
+                    final String path = file.getPath();
+                    final String extension = FilenameUtils.getExtension(path);
                     if (allowedExtensions.contains(extension)) {
                         statementConfig = new BankStatementConfig();
+                        statementConfig.setSourceType(extension);
                         switch (extension) {
                             case "csv":
                                 statementConfig.setReader(new BankStatementCSVReader());
@@ -74,10 +77,19 @@ public class MainForm extends JFrame {
                         }
 
                         textField1.setText(path);
+                        textArea1.setText("");
+                        try {
+                            final BankStatementAnalyzer bankStatementAnalyzer = new BankStatementAnalyzer(statementConfig);
+                            final String summary = bankStatementAnalyzer.analyze(path);
+                            textArea1.setText(summary);
+                        } catch (Exception ex) {
+                            JOptionPane.showMessageDialog(null,  ex.getMessage(), "Error",JOptionPane.ERROR_MESSAGE);
+                            ex.printStackTrace();
+                        }
+
                     } else {
                         JOptionPane.showMessageDialog(null,  "File extension not allowed.", "Error",JOptionPane.ERROR_MESSAGE);
                     }
-
                 }
             }
         });
