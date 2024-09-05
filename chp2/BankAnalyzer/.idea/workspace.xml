@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/BankStatementConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/MainForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/MainForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/ui/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/main/ui/MainForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/ui/MainForm$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/ui/MainForm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/ui/MainForm.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

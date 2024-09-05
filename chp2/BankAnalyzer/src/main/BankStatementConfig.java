@@ -2,34 +2,50 @@ package main;
 
 import main.contracts.BankStatementParser;
 import main.contracts.BankStatementReader;
+import main.parsers.BankStatementCSVParser;
+import main.parsers.BankStatementJsonParser;
+import main.parsers.BankStatementXmlParser;
+import main.readers.BankStatementCSVReader;
+import main.readers.BankStatementJsonReader;
+import main.readers.BankStatementXmlReader;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class BankStatementConfig {
 
-    private String sourceType;
-    private BankStatementReader statementReader;
-    private BankStatementParser statementParser;
+    private final String sourceType;
+    private final Map<String, BankStatementReader> readers = new HashMap<>();
+    private final Map<String, BankStatementParser> parsers = new HashMap<>();
 
-    public void setSourceType(String source){
+
+    public BankStatementConfig(String source){
+        loadReaders();
+        loadParsers();
         this.sourceType = source;
+    }
+
+    private void loadReaders() {
+        this.readers.put("csv", new BankStatementCSVReader());
+        this.readers.put("json", new BankStatementJsonReader());
+        this.readers.put("xml", new BankStatementXmlReader());
+    }
+
+    private void loadParsers() {
+        this.parsers.put("csv", new BankStatementCSVParser());
+        this.parsers.put("json", new BankStatementJsonParser());
+        this.parsers.put("xml", new BankStatementXmlParser());
     }
 
     public String getSourceType() {
         return this.sourceType;
     }
 
-    public void setReader(BankStatementReader reader) {
-        statementReader = reader;
-    }
-
-    public void setParser(BankStatementParser parser) {
-        statementParser = parser;
-    }
-
     public BankStatementReader getReader() {
-        return statementReader;
+        return this.readers.get(this.getSourceType());
     }
 
     public BankStatementParser getParser() {
-        return statementParser;
+        return this.parsers.get(this.getSourceType());
     }
 }

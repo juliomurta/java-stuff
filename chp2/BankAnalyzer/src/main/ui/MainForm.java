@@ -59,8 +59,8 @@ public class MainForm extends JFrame {
                     final String path = file.getPath();
                     final String extension = FilenameUtils.getExtension(path);
                     if (allowedExtensions.contains(extension)) {
-                        statementConfig = new BankStatementConfig();
-                        statementConfig.setSourceType(extension);
+                        statementConfig = new BankStatementConfig(extension);
+                        /*statementConfig.setSourceType(extension);
                         switch (extension) {
                             case "csv":
                                 statementConfig.setReader(new BankStatementCSVReader());
@@ -74,7 +74,7 @@ public class MainForm extends JFrame {
                                 statementConfig.setReader(new BankStatementXmlReader());
                                 statementConfig.setParser(new BankStatementXmlParser());
                                 break;
-                        }
+                        }*/
 
                         textField1.setText(path);
                         textArea1.setText("");
