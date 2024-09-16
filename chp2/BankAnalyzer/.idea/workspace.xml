@@ -5,12 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/DocumentManagementSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/ImageImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/Importer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/LetterImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/PrescriptionImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/ReportImporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/resources/john-doe.presc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankStatementConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BankTransactionAnalyzerSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ui/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ui/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/BankStatementConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/BankStatementConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/ui/MainForm$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/ui/MainForm$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

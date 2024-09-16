@@ -1,0 +1,25 @@
+<DATE>2024-09-13</DATE>
+For: <PATIENT>John Doe</PATIENT>
+
+<DRUG>
+<NAME>Gutallax</NAME>......................<QUANTITY>1</QUANTITY>
+<DOSAGE>twice a day</DOSAGE>
+</DRUG>
+<DRUG>
+<NAME>Aspirin</NAME>......................<QUANTITY>2</QUANTITY>
+<DOSAGE>once a day</DOSAGE>
+</DRUG>
+<DRUG>
+<NAME>Dipirona</NAME>......................<QUANTITY>1</QUANTITY>
+<DOSAGE>once every 6 hours</DOSAGE>
+</DRUG>
+<DRUG>
+<NAME>Suppository</NAME>......................<QUANTITY>50</QUANTITY>
+<DOSAGE>once every hour for a week</DOSAGE>
+</DRUG>
+<DRUG>
+<NAME>Desven</NAME>......................<QUANTITY>7</QUANTITY>
+<DOSAGE>once every day for a week</DOSAGE>
+</DRUG>
+
+Dr Avaj - CRM: 123456
