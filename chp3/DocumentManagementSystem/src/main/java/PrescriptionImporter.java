@@ -9,30 +9,6 @@ import java.util.Map;
 
 public class PrescriptionImporter implements Importer {
 
-    private class Drug {
-        final String name;
-        final String quantity;
-        final String dosage;
-
-        Drug(final String name, final String quantity, final String dosage) {
-            this.name = name;
-            this.quantity = quantity;
-            this.dosage = dosage;
-        }
-
-        public String getName() {
-            return this.name;
-        }
-
-        public String getQuantity() {
-            return this.quantity;
-        }
-
-        public String getDosage() {
-            return this.dosage;
-        }
-    }
-
     private static final String PATH = "path";
     private static final String DATE = "date";
     private static final String PATIENT = "patient";

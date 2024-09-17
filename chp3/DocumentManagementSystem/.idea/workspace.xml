@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d2539fb-df3a-4287-8f92-cd650ebe4f08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DocumentManagementSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ImageImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Importer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LetterImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PrescriptionImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReportImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/john-doe.presc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Drug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PrescriptionImporterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../chp2/BankAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp2/BankAnalyzer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DocumentManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DocumentManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrescriptionImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrescriptionImporter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +42,26 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.PrescriptionTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "C:/Users/Julio Murta/source/repos/java-stuff/chp3/DocumentManagementSystem/src/main/java/Main.java"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="PrescriptionTest" type="JUnit" factoryName="JUnit">
+      <module name="DocumentManagementSystem" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrescriptionImporterTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,16 +72,5 @@
       <updated>1726251970808</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/DocumentManagementSystem.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
