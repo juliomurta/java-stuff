@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8751fd0c-74eb-4444-991f-d69819fee26a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/Drug.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/Prescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/test/java/PrescriptionImporterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/DocumentManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/DocumentManagementSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/PrescriptionImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../chp3/DocumentManagementSystem/src/main/java/PrescriptionImporter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
